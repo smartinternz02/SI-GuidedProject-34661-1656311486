@@ -1,0 +1,7 @@
+public class ParkLocator {
+    public static String [] country (String x) {
+        String parks = x; // {'Yellowstone','Kanha','Mount Fuji'};
+        ParkService.ParksImplPort findCountries = new ParkService.ParksImplPort ();
+        return findCountries.byCountry (parks);
+    }
+}
